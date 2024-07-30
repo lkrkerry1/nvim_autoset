@@ -3,11 +3,14 @@ require("competitest").setup {
     interface = "split",
   },
   compile_command = {
-    cpp = { exec = "g++", args = { "$(FNAME)", "-std=c++17", "-O2", "-g", "-Wall", "-o", "$(FNOEXT)" } },
+    cpp = { exec = "g++", args = { "$(FNAME)", "-std=c++17", "-O2", "-g", "-Wall", "-Wextra", "-o", "$(FNOEXT)" } },
     some_lang = { exec = "some_compiler", args = { "$(FNAME)" } },
   },
   run_command = {
     cpp = { exec = "./$(FNOEXT)" },
     some_lang = { exec = "some_interpreter", args = { "$(FNAME)" } },
+  },
+  template_file = {
+    cpp = "~/Documents/template.cpp",
   },
 }

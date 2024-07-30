@@ -15,3 +15,7 @@ vim.notify = function(msg, ...)
 end
 
 vim.g.lua_snippets_path = "snippets/init.lua"
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.softtabstop = 4
+vim.opt.expandtab = true
