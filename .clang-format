@@ -3,3 +3,5 @@ BasedOnStyle: Google
 ColumnLimit: 75
 IndentWidth: 4
 NamespaceIndentation: All
+AlwaysBreakTemplateDeclarations: false
+AllowShortFunctionsOnASingleLine: All
